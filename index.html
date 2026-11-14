@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="confetti"></div>
+
+<div class="bar">
+  <span id="bar"></span>
+</div>
+
+<main>
+
+  <!-- WELCOME -->
+  <section class="screen active" id="welcome">
+    <div class="glass hero">
+
+      <div class="mini">A tiny birthday adventure</div>
+
+      <h1>
+        Happy Birthday<br>
+        <em>Shivanitish 💗</em> 🎂
+      </h1>
+
+      <img
+  class="bubu"
+  src="bubunew.jpg"
+  alt="Bubu and Dudu"
+>
+
+      <p class="question">Are you excited?</p>
+
+      <div class="choices">
+        <button id="yes" class="btn">YES 💗</button>
+        <button id="no" class="btn no">NO 🙈</button>
+      </div>
+
+      <p id="noText" class="hint">
+        Choose wisely… 😌
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- CAKE -->
+  <section class="screen" id="cake">
+    <div class="glass">
+
+      <div class="mini">Chapter 01 · Make a wish</div>
+
+      <h2>Let's cut the cake 🎂</h2>
+
+      <p>
+        First, help blow the candle out.
+        Slide the flame away.
+      </p>
+
+      <div class="cakeStage">
+
+        <div class="cake">
+
+          <div class="flame"></div>
+          <div class="candle"></div>
+          <div class="cream"></div>
+          <div class="tier"></div>
+          <div class="plate"></div>
+
+        </div>
+
+        <div class="slider">
+
+          <span>
+            ← SLIDE TO BLOW THE CANDLES →
+          </span>
+
+          <input
+            id="blow"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+          >
+
+        </div>
+
+      </div>
+
+      <div id="cakeMsg" class="message">
+        Come on… make a wish ✨
+      </div>
+
+      <button id="cakeNext" class="btn hidden">
+        Cut the Cake & Continue →
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- BALLOONS -->
+  <section class="screen" id="balloons">
+    <div class="glass wide">
+
+      <div class="mini">
+        Chapter 02 · Four little secrets
+      </div>
+
+      <h2>Pop them one by one 🎈</h2>
+
+      <p>
+        Each balloon has a little message for you.
+      </p>
+
+      <div class="balloons">
+
+        <button
+          class="balloon a"
+          data-m="You are my special person. ❤️">
+          <i></i>
+        </button>
+
+        <button
+          class="balloon b"
+          data-m="You make my days brighter. ✨">
+          <i></i>
+        </button>
+
+        <button
+          class="balloon c"
+          data-m="You deserve every beautiful thing. 🌸">
+          <i></i>
+        </button>
+
+        <button
+          class="balloon d"
+          data-m="And you will always be close to my heart. 💕">
+          <i></i>
+        </button>
+
+      </div>
+
+      <div id="bmsg" class="message">
+        4 surprises are waiting…
+      </div>
+
+      <button id="balloonNext" class="btn hidden">
+        Go to the Special Memories →
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- MEMORIES -->
+  <section class="screen" id="memories">
+
+    <div class="glass wide">
+
+      <div class="mini">
+        Chapter 03 · The memories
+      </div>
+
+      <h2>Our little memories 📸</h2>
+
+      <p>
+        Some moments deserve to be kept forever.
+      </p>
+
+      <div class="memory">
+
+        <button id="prev" class="arrow">
+          ‹
+        </button>
+
+        <div class="photo">
+
+          <img
+            id="photo"
+            src="photos/photo1.jpg"
+            alt="Memory"
+          >
+
+          <div class="caption">
+
+            <small id="count">
+              01 / 06
+            </small>
+
+            <strong id="pcap">
+              A little moment worth remembering.
+            </strong>
+
+          </div>
+
+        </div>
+
+        <button id="next" class="arrow">
+          ›
+        </button>
+
+      </div>
+
+      <div id="dots" class="dots"></div>
+
+      <button id="memNext" class="btn">
+        Open the Bouquet 💐 →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- BOUQUET -->
+  <section class="screen" id="bouquet">
+
+    <div class="glass bouquetCard">
+
+      <div class="mini">
+        Chapter 04 · A little bouquet
+      </div>
+
+      <h2>For someone special 💐</h2>
+
+      <p>
+        Tap the bouquet to open the flowers.
+      </p>
+
+      <button id="bouquetBtn" class="bouquet">
+        🌷🌹🌸
+        <span>💐</span>
+        🌸🌹🌷
+      </button>
+
+      <div id="chats" class="chats hidden">
+
+        <div>
+          “You know what my favorite notification is?”
+          <b>Yours. 💕</b>
+        </div>
+
+        <div>
+          “If I could keep one feeling forever…”
+          <b>It would be this one.</b>
+        </div>
+
+        <div>
+          “You make even ordinary moments…”
+          <b>feel a little magical. ✨</b>
+        </div>
+
+        <div>
+          “Some people are memories.”
+          <b>You are a whole feeling.</b>
+        </div>
+
+        <div>
+          “My favorite place?”
+          <b>Wherever I get to talk to you. ❤️</b>
+        </div>
+
+        <div>
+          “And if I had one wish today…”
+          <b>more beautiful moments with you.</b>
+        </div>
+
+        <div>
+          “No matter how many birthdays pass…”
+          <b>you will always be special.</b>
+        </div>
+
+        <div>
+          “Okay, one last thing…”
+          <b>You are genuinely precious to me. 🥹</b>
+        </div>
+
+      </div>
+
+      <button id="surpriseBtn" class="btn hidden">
+        Go for the Next Surprise →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINAL LETTER -->
+  <section class="screen" id="letter">
+
+    <div class="glass letterCard">
+
+      <div class="mini">
+        Final surprise · Open your message
+      </div>
+
+      <button id="box" class="messageBox">
+
+        <span class="lid">
+          💌
+        </span>
+
+        <span class="boxbody">
+          OPEN ME
+        </span>
+
+      </button>
+
+      <div id="letterText" class="letterText hidden">
+
+        <h2>
+          Happy Birthday<br>
+          <em>to someone truly special.</em>
+        </h2>
+
+        <p>
+          Today is your day, but honestly,
+          the world feels a little more beautiful
+          because you are in it.
+        </p>
+
+        <p>
+          I hope this year brings you countless
+          reasons to smile, dreams that finally
+          come true, and people who remind you
+          just how loved and important you are.
+        </p>
+
+        <p>
+          And if this little surprise managed
+          to make you smile even once,
+          then it was completely worth making. ❤️
+        </p>
+
+        <div class="signature">
+          With lots of love,<br>
+          <b>
+            Someone who thinks you're pretty special. 💗
+          </b>
+        </div>
+
+      </div>
+
+      <button id="replay" class="btn hidden">
+        Replay the whole journey ↺
+      </button>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
